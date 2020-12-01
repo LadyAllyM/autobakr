@@ -1,0 +1,8 @@
+{
+  "profiles": {
+    "autobakr": {
+      "commandName": "Project",
+      "commandLineArgs": "abc def ghi"
+    }
+  }
+}
