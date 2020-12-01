@@ -25,7 +25,7 @@ namespace autobakr {
             // part of another, the longest one takes precedence.
             // Read list of bread types. Whether that be from input or file.
 
-            var breadTypes = getUserFileList().OrderByDescending(s => s.Length).ToList();
+            var breadTypes = GetUserFileList().OrderByDescending(s => s.Length).ToList();
             Console.WriteLine();
 
             Console.WriteLine("Enter a list of sentences to read, or input a file path.");
@@ -34,7 +34,7 @@ namespace autobakr {
 
             // Read list of sentences, whether that be from input or file. (Separated by line)
 
-            var sentences = getUserFileList();
+            var sentences = GetUserFileList();
             Console.WriteLine();
 
             // A dictionary of sentences which gives the indexes and colours for the regions
@@ -46,7 +46,7 @@ namespace autobakr {
 
             foreach (var output in matchSentences) {
                 // Give us our highlighted output for every matched sentence.
-                writeColoured(output.Key, output.Value);
+                WriteColoured(output.Key, output.Value);
             }
         }
 
