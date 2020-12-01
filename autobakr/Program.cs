@@ -90,7 +90,7 @@ namespace autobakr {
             return outputSentences;
         }
 
-        private static void writeColoured(string str, Dictionary<int, ConsoleColor> textPos) {
+        private static void WriteColoured(string str, Dictionary<int, ConsoleColor> textPos) {
             // Rudimentary method of highlight certain blocks of text - character by character.
             // Can be improved by means of substrings, because Console output is sloooooooow.
             var inColor = Console.ForegroundColor;
@@ -110,7 +110,7 @@ namespace autobakr {
             Console.WriteLine();
         }
 
-        private static List<string> getUserFileList() {
+        private static List<string> GetUserFileList() {
             // Maintain a list of all user-inputted entries.
             var userList = new List<string>();
 
