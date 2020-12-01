@@ -17,7 +17,7 @@ namespace autobakr {
             // a single file script, this shall do.
             // Compatibility external programs to input data and read output is possible.
 
-            Console.WriteLine("Enter a list of types of bread to detect, or input a file path.");
+            Console.WriteLine("Enter a list of phrases to search for, or input a file path.");
             Console.WriteLine("File contents must be separated by new line.");
             Console.WriteLine("Press enter on empty line to finish entering types.");
 
